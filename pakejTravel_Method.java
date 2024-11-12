@@ -9,10 +9,6 @@ public class pakejTravel_Method {
         boolean loop = true;
 
         tajuk();
-        //2nd round: i=1,x=1, i=x, i!=x,
-        //3rd round: i=2, x=1, i!=x
-        //Input data pengguna
-
 
         do {
             System.out.print("Masukkan bajet perseorangan (RM) : ");
@@ -39,12 +35,8 @@ public class pakejTravel_Method {
             }
         } while (loop);
 
-        System.out.println("\nTerima kasih kerana menggunakan sistem cadangan pakej pelancongan kami. Anda sangat kami hargai. Maaf atas segala kesilapan yang berlaku.\nUntuk maklumat lanjut, sila hubungi agen berikut:");
-        System.out.println("1) Encik Lontong\n   No Tel. : 0127895672");
-        System.out.println("2) Encik Danie\n   No Tel. : 0107835629");
-
-        //System.out.println("\n\nBilangan ulangan: "+i);
-
+        //paparan maklumat agen
+        maklumatAgen();
     }
 
     public static void tajuk() {
@@ -77,5 +69,11 @@ public class pakejTravel_Method {
     public static void paparan1(double jumBajet, String Ucapan) {
         System.out.println("\nRM" + jumBajet);
         System.out.println("\n" + Ucapan);
+    }
+
+    public static void maklumatAgen() {
+        System.out.println("\nTerima kasih kerana menggunakan sistem cadangan pakej pelancongan kami. Anda sangat kami hargai. Maaf atas segala kesilapan yang berlaku.\nUntuk maklumat lanjut, sila hubungi agen berikut:");
+        System.out.println("1) Encik Lontong\n   No Tel. : 0127895672");
+        System.out.println("2) Encik Danie\n   No Tel. : 0107835629");
     }
 }
